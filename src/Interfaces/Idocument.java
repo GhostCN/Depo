@@ -14,6 +14,10 @@ import java.rmi.RemoteException;
  * @author Ghost CN
  */
 public interface Idocument extends Remote {
+<<<<<<< HEAD
     public int AddDocument(Document doc) throws RemoteException;
     
+=======
+        public int AddDocument(Document doc) throws RemoteException;
+>>>>>>> origin/master
 }

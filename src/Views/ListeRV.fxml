@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="Controller.ListeRVController">
+   <children>
+      <TableView fx:id="RVTable" layoutY="-1.0" prefHeight="427.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="numRvClmn" prefWidth="203.0" text="Numero RendezVous" />
+          <TableColumn fx:id="dateRvClmn" prefWidth="230.0" text="Date RendezVous" />
+            <TableColumn fx:id="dossClmn" prefWidth="166.0" text="Dossier " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

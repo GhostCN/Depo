@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="paneUsers" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FormUsersController">
+   <children>
+      <TabPane fx:id="tabPaneUsers" layoutX="3.0" prefHeight="470.0" prefWidth="658.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabAffichage" onCloseRequest="#Affichage" text="Consulter l'ensemble des utiliateurs">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TV" layoutX="24.0" layoutY="22.0" prefHeight="285.0" prefWidth="606.0">
+                          <columns>
+                            <TableColumn fx:id="prenomClmn" prefWidth="99.0" text="Prenom" />
+                            <TableColumn fx:id="nomClmn" prefWidth="84.0" text="Nom" />
+                              <TableColumn fx:id="logClmn" prefWidth="93.0" text="Login" />
+                              <TableColumn fx:id="passClmn" prefWidth="110.0" text="password" />
+                              <TableColumn fx:id="telClmn" prefWidth="87.0" text="Tel" />
+                              <TableColumn fx:id="emailClmn" prefWidth="132.0" text="email" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+               </content></Tab>
+          <Tab fx:id="tabConsulter" text="Ajouter un utilisateur">
+               <content>
+                  <Pane prefHeight="434.0" prefWidth="672.0">
+                     <children>
+                        <Label layoutX="54.0" layoutY="70.0" prefHeight="17.0" prefWidth="108.0" text="Prenom:" />
+                        <Label layoutX="53.0" layoutY="113.0" prefHeight="17.0" prefWidth="110.0" text="Adresse :" />
+                        <Label layoutX="53.0" layoutY="149.0" prefHeight="17.0" prefWidth="110.0" text="Email :" />
+                        <Label layoutX="43.0" layoutY="191.0" prefHeight="17.0" prefWidth="110.0" text="Telephone :" />
+                        <TextField fx:id="txtPrenom" layoutX="404.0" layoutY="66.0" prefHeight="25.0" prefWidth="167.0" />
+                        <TextField fx:id="txtAdresse" layoutX="403.0" layoutY="109.0" prefHeight="25.0" prefWidth="167.0" />
+                        <TextField fx:id="telTxt" layoutX="403.0" layoutY="187.0" prefHeight="25.0" prefWidth="167.0" />
+                        <TextField fx:id="emailTxt" layoutX="407.0" layoutY="145.0" prefHeight="25.0" prefWidth="167.0" />
+                        <Button layoutX="253.0" layoutY="384.0" mnemonicParsing="false" onAction="#ajout" prefHeight="34.0" prefWidth="115.0" text="Ajouter" />
+                        <Label layoutX="53.0" layoutY="33.0" prefHeight="17.0" prefWidth="90.0" text="Nom :" />
+                        <TextField fx:id="txtNom" layoutX="403.0" layoutY="29.0" prefHeight="25.0" prefWidth="167.0" />
+                        <Label layoutX="53.0" layoutY="241.0" prefHeight="17.0" prefWidth="81.0" text="Profil :" />
+                        <ComboBox fx:id="comboProfil" layoutX="403.0" layoutY="237.0" prefHeight="25.0" prefWidth="168.0" />
+                        <Label layoutX="53.0" layoutY="282.0" text="Login" />
+                        <Label layoutX="58.0" layoutY="338.0" text="Mot de passe" />
+                        <TextField fx:id="logtxt" layoutX="407.0" layoutY="290.0" prefHeight="25.0" prefWidth="166.0" />
+                        <PasswordField fx:id="passwdTxt" layoutX="407.0" layoutY="334.0" prefHeight="25.0" prefWidth="164.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

@@ -16,9 +16,16 @@ import java.util.List;
  * @author Ghost CN
  */
 public interface Idossier extends Remote {
+<<<<<<< HEAD
     public String NumDossier() throws RemoteException;
     public Dossier SearchDossier(String num) throws RemoteException;
      public List<RendezVous> SearchRdv(String num) throws RemoteException;
     public int AddDossier(Dossier d) throws RemoteException;
     
+=======
+     public String NumDossier() throws RemoteException;
+    public Dossier SearchDossier(String num) throws RemoteException;
+     public List<RendezVous> SearchRdv(String num) throws RemoteException;
+    public int AddDossier(Dossier d) throws RemoteException;
+>>>>>>> origin/master
 }

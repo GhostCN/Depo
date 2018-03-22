@@ -13,7 +13,11 @@
             </extension>
         </buildExtensions>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+<<<<<<< HEAD
             <name>Hopital_Serveur</name>
+=======
+            <name>Hopital_Client</name>
+>>>>>>> origin/master
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

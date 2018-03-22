@@ -15,7 +15,11 @@ import java.util.List;
  * @author Ghost CN
  */
 public interface Iconsultation  extends Remote{
+<<<<<<< HEAD
       public int AddConsultation(Consultation cons) throws RemoteException;
+=======
+    public int AddConsultation(Consultation cons) throws RemoteException;
+>>>>>>> origin/master
     public List<Consultation>GetListConsultation(String num)throws RemoteException;
     
 }

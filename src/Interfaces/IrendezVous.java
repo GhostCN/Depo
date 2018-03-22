@@ -15,7 +15,14 @@ import java.util.List;
  * @author Ghost CN
  */
 public interface IrendezVous extends Remote{
+<<<<<<< HEAD
        public int AddRv(RendezVous rv) throws RemoteException;
       public List<RendezVous> ListeRV() throws RemoteException;
         public String NumRvAuto() throws RemoteException;
+=======
+      public int AddRv(RendezVous rv) throws RemoteException;
+      public List<RendezVous> ListeRV() throws RemoteException;
+      public String NumRvAuto() throws RemoteException;
+    
+>>>>>>> origin/master
 }

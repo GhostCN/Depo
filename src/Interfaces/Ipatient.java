@@ -17,6 +17,10 @@ import java.util.List;
 public interface Ipatient extends Remote{
     public int AddPatient(Patient pat) throws  RemoteException;
     public String NumPatientAuto() throws RemoteException;
+<<<<<<< HEAD
      public List<Patient> ListPatient() throws RemoteException;
+=======
+    public List<Patient> ListPatient() throws RemoteException;
+>>>>>>> origin/master
     public Patient GetPatient(int num) throws RemoteException;
 }

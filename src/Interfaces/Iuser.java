@@ -17,6 +17,12 @@ import java.util.List;
 public interface Iuser extends Remote{
      public Utilisateur GetUser(String log,String passwd) throws RemoteException;
     public int addUser(Utilisateur user) throws RemoteException;
+<<<<<<< HEAD
       public List<Utilisateur> ListeU() throws RemoteException;
      public String NumUserAuto() throws RemoteException;
+=======
+    public List<Utilisateur> ListeU() throws RemoteException;
+     public String NumUserAuto() throws RemoteException;
+    
+>>>>>>> origin/master
 }
